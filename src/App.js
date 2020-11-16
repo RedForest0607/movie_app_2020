@@ -20,6 +20,8 @@ class App extends Component{
   add = () => {
     this.setState(current => ({count: current.count+1}));
   };
+
+
   minus = () => {
     this.setState(current => ({count: current.count-1}));
   };
