@@ -6,8 +6,8 @@ function Movies({id, year, title, summary, poster, genres}) {
                 <h3 className="movie_title">{title}</h3>
                 <h5 className="movie_year">{year}</h5>
                 <img src={poster} alt={title} title={title}/>
-                <p className="movie_summary">{summary.slice(0.140)}</p>
-                <ul className="genres"> {genres.map((genre,index) => (<il key={index} className="genre">•{genre}<br /></il> ))} </ul>
+                <ul className="genres"> {genres.map((genre,index) => (<il key={index} className="genre">•{genre}</il> ))} </ul>
+                <div className="summaryDiv"><p className="movie_summary">{summary.slice(0,300)}</p></div>
             </div>;
 }
 
