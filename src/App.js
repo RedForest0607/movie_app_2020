@@ -4,6 +4,7 @@ import {HashRouter, Route} from "react-router-dom";
 import About from "./routes/About";
 import Home from "./routes/Home";
 import Navigation from "./routes/Navigation";
+import Detail from "./routes/Detail";
 
 function App(){
   return(
@@ -11,6 +12,7 @@ function App(){
     <Navigation />
     <Route path="/" exact={true} component={Home} />
     <Route path="/about" component = {About} />
+    <Route path="/movie-detail" component ={Detail} />
     {/* exact로 라우터 끼리 겹치는것을 막아준다 */}
   </HashRouter>
   );
